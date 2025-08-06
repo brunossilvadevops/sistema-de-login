@@ -16,5 +16,6 @@ O objetivo é demonstrar de forma simples o funcionamento de um login, cadastro 
 
 ---
 
-## 📂 Estrutura do Projeto
+<img width="376" height="352" alt="image" src="https://github.com/user-attachments/assets/b1119497-34ce-47c7-ba84-b9fce0aec034" />
+
 
