@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Usuários Cadastrados</title>
+  <link rel="stylesheet" href="style.css"> <!-- Reutiliza o estilo CSS -->
+</head>
+<body>
+  <div class="container">
+    <h2>Usuários Cadastrados</h2>
+    <!-- Lista que será preenchida via JavaScript -->
+    <ul id="listaUsuarios"></ul>
+
+    <!-- Link para voltar para a tela de login -->
+    <a href="index.html">Voltar para o Login</a>
+  </div>
+
+  <script>
+    // Pega a lista de usuários salvos no localStorage
+    const lista = document.getElementById('listaUsuarios');
+    const usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
+
+    // Para cada usuário, cria um <li> com o nome do usuário
+    usuarios.forEach(user => {
+      const li = document.createElement('li');
+      li.textContent = user.usuario;
+      lista.appendChild(li);
+    });
+  </script>
+</body>
+</html>

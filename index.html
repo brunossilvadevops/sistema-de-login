@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Simples</title>
+  <link rel="stylesheet" href="style.css"> <!-- Importa os estilos CSS -->
+</head>
+<body>
+  <div class="container">
+    <h2>Login / Cadastro</h2>
+    
+    <!-- Campos de entrada de usuário e senha -->
+    <input type="text" id="usuario" placeholder="Usuário" />
+    <input type="password" id="senha" placeholder="Senha" />
+    
+    <!-- Botões que disparam funções JavaScript -->
+    <button onclick="login()">Login</button>
+    <button onclick="cadastrar()">Cadastrar</button>
+
+    <!-- Parágrafo onde mensagens (sucesso/erro) serão exibidas -->
+    <p id="mensagem"></p>
+  </div>
+
+  <!-- Importa o arquivo JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
